@@ -1,174 +1,127 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
-    />
-    <title>Feed</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i"
-    />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css"
-    />
-    <link rel="stylesheet" href="./afterCSS/tabbed.css" />
-    <link rel="stylesheet" href="assets/css/smoothproducts.css" />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+  <title>Feed</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i" />
 
-  <body>
-    <nav
-      class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar"
-    >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
+  <link rel="stylesheet" href="./afterCSS/tabbed.css" />
+  <link rel="stylesheet" href="assets/css/smoothproducts.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+    <div class="container">
+      <a class="navbar-brand logo" href="#">Goa Guide</a>
+    </div>
+  </nav>
+  <main class="page service-page">
+    <section class="clean-block clean-services dark">
       <div class="container">
-        <a class="navbar-brand logo" href="#">Goa Guide</a>
-      </div>
-    </nav>
-    <main class="page service-page">
-      <section class="clean-block clean-services dark">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 col-lg-4">
-              <div class="card">
-                <img
-                  class="card-img-top w-100 d-block"
-                  src="assets/img/scenery/image5.jpg"
-                />
-                <div class="card-body">
-                  <h4 class="card-title">Lorem Ipsum</h4>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nunc quam urna, dignissim nec auctor in.
-                  </p>
-                </div>
-                <div></div>
+        <div class="row" id="CardsHere">
+          <!--
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <img class="card-img-top w-100 d-block" src="assets/img/scenery/image5.jpg" />
+              <div class="card-body">
+                <h4 class="card-title">Lorem Ipsum</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nunc quam urna, dignissim nec auctor in.
+                </p>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <img class="card-img-top w-100 d-block" src="assets/img/scenery/image6.jpg" />
+              <div class="card-body">
+                <h4 class="card-title">Lorem Ipsum</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nunc quam urna, dignissim nec auctor in.
+                </p>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4">
-              <div class="card">
-                <img
-                  class="card-img-top w-100 d-block"
-                  src="assets/img/scenery/image6.jpg"
-                />
-                <div class="card-body">
-                  <h4 class="card-title">Lorem Ipsum</h4>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nunc quam urna, dignissim nec auctor in.
-                  </p>
-                </div>
+          </div>
+        --->
+          <!-- Modal -->
+
+
+        </div>
+        <div class="modal fade Detailed-Data-modal" id="exampleModalCenter" tabindex="-1" role="dialog"
+          aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle"></h5>
+                <button class="btn btn-outline-danger" type="button" class="close" data-dismiss="modal"
+                  aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
               </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <div class="card">
-                <img
-                  class="card-img-top w-100 d-block"
-                  src="assets/img/scenery/image1.jpg"
-                />
-                <div class="card-body">
-                  <h4 class="card-title">Lorem Ipsum</h4>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nunc quam urna, dignissim nec auctor in.
-                  </p>
-                </div>
+              <div class="modal-body" id="dmxc-body">
+                <img class="img img-fluid" src="${obj.}">
+                ${obj.little_desc}
+                <hr>
+                ${obj.big_desc}
               </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Lorem Ipsum</h4>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nunc quam urna, dignissim nec auctor in.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <div class="card">
-                <img
-                  class="card-img-top w-100 d-block"
-                  src="assets/img/scenery/image5.jpg"
-                />
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <div class="card">
-                <img
-                  class="card-img-top w-100 d-block"
-                  src="assets/img/scenery/image6.jpg"
-                />
-                <div class="card-body">
-                  <h4 class="card-title">Lorem Ipsum</h4>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nunc quam urna, dignissim nec auctor in.
-                  </p>
-                </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </main>
-    <footer class="page-footer dark">
-      <div
-        class="footer-copyright"
-        style="position: fixed;bottom: 0;width: 100%;"
-      >
-        <div style="/*width: 30%;*/">
-          <ul class="nav nav-tabs bg-light">
-            <li class="nav-item" style="/*width: 33%;*//*text-align: center;*/">
-              <a class="nav-link " href="./feed-tab.html">
-                <div class="inTab-Field">
-                  <img
-                    src="./images/icon/feed-tab.png"
-                    alt=""
-                    class="tab-icon"
-                  />
-                  <p>Feed</p>
-                </div>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./maps-tab.html">
-                <div class="inTab-Field">
-                  <img
-                    src="./images/icon/map-tab.png"
-                    alt=""
-                    class="tab-icon"
-                  />
-                  <p>Maps</p>
-                </div>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./explore-tab.html">
-                <div class="inTab-Field">
-                  <img
-                    src="./images/icon/explore-tab.png"
-                    alt=""
-                    class="tab-icon"
-                  />
-                  <p>Explore</p>
-                </div>
-              </a>
-            </li>
-          </ul>
-          <div class="tab-content"></div>
-        </div>
       </div>
-    </footer>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
-    <script src="assets/js/smoothproducts.min.js"></script>
-    <script src="assets/js/theme.js"></script>
-  </body>
+    </section>
+  </main>
+  <footer class="page-footer dark">
+    <div class="footer-copyright" style="position: fixed;bottom: 0;width: 100%;">
+      <div style="/*width: 30%;*/">
+        <ul class="nav nav-tabs bg-light">
+          <li class="nav-item" style="/*width: 33%;*//*text-align: center;*/">
+            <a class="nav-link " href="./feed-tab.html">
+              <div class="inTab-Field">
+                <img src="./images/icon/feed-tab.png" alt="" class="tab-icon" />
+                <p>Feed</p>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./maps-tab.html">
+              <div class="inTab-Field">
+                <img src="./images/icon/map-tab.png" alt="" class="tab-icon" />
+                <p>Maps</p>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./explore-tab.html">
+              <div class="inTab-Field">
+                <img src="./images/icon/explore-tab.png" alt="" class="tab-icon" />
+                <p>Explore</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class="tab-content"></div>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+  <script src="assets/js/smoothproducts.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+
+
+  <script src="./JSLoad/10-entry.js"></script>
+  <script src="./JSLoad/dataLoad.js"></script>
+</body>
+
 </html>

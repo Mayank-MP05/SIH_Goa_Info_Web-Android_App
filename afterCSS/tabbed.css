@@ -38,3 +38,12 @@ footer,
 .footer-copyright {
   z-index: 79;
 }
+
+.card-body{
+  padding: 4px;
+}
+
+.Detailed-Data-modal{
+  height: 93vh;
+  width: 100%;
+}
