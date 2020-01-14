@@ -17,6 +17,9 @@
 .page-footer.dark .footer-copyright p {
   color: black;
 }
+.page-footer.dark {
+  background-color: rgba(0, 0, 0, 0);
+}
 .tab-icon {
   height: 30px;
   width: 30px;
@@ -29,4 +32,9 @@
 }
 .nav-item {
   width: 33%;
+}
+
+footer,
+.footer-copyright {
+  z-index: 79;
 }
