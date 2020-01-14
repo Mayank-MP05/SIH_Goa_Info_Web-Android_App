@@ -1,0 +1,32 @@
+.inTab-Field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  margin: 0;
+}
+
+.page-footer .footer-copyright p {
+  margin: 0;
+  padding: 0;
+}
+
+.page-footer.dark .footer-copyright p {
+  color: black;
+}
+.tab-icon {
+  height: 30px;
+  width: 30px;
+  margin: 0;
+}
+
+.nav-link {
+  margin: 0;
+  padding: 0;
+}
+.nav-item {
+  width: 33%;
+}
