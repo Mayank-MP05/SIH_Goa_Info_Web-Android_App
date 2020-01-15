@@ -1,93 +1,268 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
-    />
-    <title>Maps - Goa Maps</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i"
-    />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css"
-    />
-    <link rel="stylesheet" href="./afterCSS/tabbed.css" />
-    <link rel="stylesheet" href="assets/css/smoothproducts.css" />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+  <title>Maps - Goa Maps</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i" />
 
-  <body>
-    <nav
-      class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar"
-    >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
+  <link rel="stylesheet" href="./afterCSS/tabbed.css" />
+  <link rel="stylesheet" href="assets/css/smoothproducts.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+    <div class="container">
+      <a class="navbar-brand logo" href="#">Goa Guide</a>
+    </div>
+  </nav>
+
+  <main class="page service-page">
+    <section class="clean-block clean-services">
       <div class="container">
-        <a class="navbar-brand logo" href="#">Goa Guide</a>
-      </div>
-    </nav>
-    <main class="page service-page">
-      <section class="clean-block clean-services dark">
-        <div class="container">
-          <!---JS MAPS Code here -->
+
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item justify-content-center">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="home"
+              aria-selected="true">#Nature</a>
+          </li>
+          <li class="nav-item justify-content-center">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+              aria-controls="profile" aria-selected="false">#Beach</a>
+          </li>
+          <li class="nav-item justify-content-end">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+              aria-controls="contact" aria-selected="false">#Historic</a>
+          </li>
+        </ul>
+
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+
+            <div class="row">
+              <h4 class="btn border-bottom border-bottom-primary w-100">#Nature</h4>
+              <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="card" style="width: 100%;">
+                      <img class="d-block w-100 card-img-top"
+                        src="./images/goa-places-card-img/Bondla_Wildlife_Sanctuary.jpg" alt="Third slide">
+                      <div class="card-body">
+                        <h5 class="card-title">Bondala Wildlife Sanctuary</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card" style="width: 100%;">
+                      <img class="d-block w-100 card-img-top" src="./images/goa-places-card-img/Chorao_Island.jpg"
+                        alt="Third slide">
+                      <div class="card-body">
+                        <h5 class="card-title">Chorao Islands</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card" style="width: 100%;">
+                      <img class="d-block w-100 card-img-top" src="./images/goa-places-card-img/Dudhsagar_Falls.jpg"
+                        alt="Third slide">
+                      <div class="card-body">
+                        <h5 class="card-title">Dudhsagar Falls</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card" style="width: 100%;">
+                      <img class="d-block w-100 card-img-top"
+                        src="./images/goa-places-card-img/Salim_Ali_Bird_Sanctuary.jpg" alt="Third slide">
+                      <div class="card-body">
+                        <h5 class="card-title">Salim Ali Birds Sanctuary</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+
+            <div class="row">
+              <h4 class="btn border-bottom border-bottom-primary w-100">#BeachBeauty</h4>
+              <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="card" style="width: 100%;">
+                      <img class="d-block w-100 card-img-top" src="./images/goa-places-card-img/anjuana_beach.jpg"
+                        alt="Third slide">
+                      <div class="card-body">
+                        <h5 class="card-title">Anjuana Beach</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card" style="width: 100%;">
+                      <img class="d-block w-100 card-img-top" src="./images/goa-places-card-img/Calangute Beach.jpg"
+                        alt="Third slide">
+                      <div class="card-body">
+                        <h5 class="card-title">Calangute Beach</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card" style="width: 100%;">
+                      <img class="d-block w-100 card-img-top" src="./images/goa-places-card-img/colva.jpg"
+                        alt="Third slide">
+                      <div class="card-body">
+                        <h5 class="card-title">Colva Beach</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card" style="width: 100%;">
+                      <img class="d-block w-100 card-img-top" src="./images/goa-places-card-img/Vagator_Beach.jpg"
+                        alt="Third slide">
+                      <div class="card-body">
+                        <h5 class="card-title">Vagator Beach</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
-    </main>
-    <footer class="page-footer dark">
-      <div
-        class="footer-copyright"
-        style="position: fixed;bottom: 0;width: 100%;"
-      >
-        <div style="/*width: 30%;*/">
-          <ul class="nav nav-tabs bg-light">
-            <li class="nav-item" style="/*width: 33%;*//*text-align: center;*/">
-              <a class="nav-link " href="./feed-tab.html">
-                <div class="inTab-Field">
-                  <img
-                    src="./images/icon/feed-tab.png"
-                    alt=""
-                    class="tab-icon"
-                  />
-                  <p>Feed</p>
-                </div>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./maps-tab.html">
-                <div class="inTab-Field">
-                  <img
-                    src="./images/icon/map-tab.png"
-                    alt=""
-                    class="tab-icon"
-                  />
-                  <p>Maps</p>
-                </div>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./explore-tab.html">
-                <div class="inTab-Field">
-                  <img
-                    src="./images/icon/explore-tab.png"
-                    alt=""
-                    class="tab-icon"
-                  />
-                  <p>Explore</p>
-                </div>
-              </a>
-            </li>
-          </ul>
-          <div class="tab-content"></div>
-        </div>
       </div>
-    </footer>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
-    <script src="assets/js/smoothproducts.min.js"></script>
-    <script src="assets/js/theme.js"></script>
-  </body>
+
+
+
+      <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+        <h4 class="btn border-bottom border-bottom-primary w-100">#Historic</h4>
+        <div id="carouselExampleControls3" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card" style="width: 100%;">
+                <img class="d-block w-100 card-img-top" src="./images/goa-places-card-img/Ancestral_Goa_Big_Foot.jpg"
+                  alt="Third slide">
+                <div class="card-body">
+                  <h5 class="card-title">Ancestral Goa Big Foot</h5>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card" style="width: 100%;">
+                <img class="d-block w-100 card-img-top" src="./images/goa-places-card-img/Basilica_of_Bom_Jesus.jpg"
+                  alt="Third slide">
+                <div class="card-body">
+                  <h5 class="card-title">Basilica of Bom Jesus</h5>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card" style="width: 100%;">
+                <img class="d-block w-100 card-img-top" src="./images/goa-places-card-img/Cabo_de_Rama.jpg"
+                  alt="Third slide">
+                <div class="card-body">
+                  <h5 class="card-title">Cabo de Rama</h5>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card" style="width: 100%;">
+                <img class="d-block w-100 card-img-top" src="./images/goa-places-card-img/Goa_State_Museum.jpg"
+                  alt="Third slide">
+                <div class="card-body">
+                  <h5 class="card-title">Goa State Museum</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls3" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls3" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+      </div>
+      </div>
+
+      <!---JS MAPS Code here -->
+
+      <!--- Historic Places Carousel Goes Here -->
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer dark">
+    <div class="footer-copyright" style="position: fixed;bottom: 0;width: 100%;">
+      <div style="/*width: 30%;*/">
+        <ul class="nav nav-tabs bg-light">
+          <li class="nav-item" style="/*width: 33%;*//*text-align: center;*/">
+            <a class="nav-link " href="./feed-tab.html">
+              <div class="inTab-Field">
+                <img src="./images/icon/feed-tab.png" alt="" class="tab-icon" />
+                <p>Feed</p>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./maps-tab.html">
+              <div class="inTab-Field">
+                <img src="./images/icon/map-tab.png" alt="" class="tab-icon" />
+                <p>Maps</p>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./explore-tab.html">
+              <div class="inTab-Field">
+                <img src="./images/icon/explore-tab.png" alt="" class="tab-icon" />
+                <p>Explore</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class="tab-content"></div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    (function ($) {
+      "use strict";
+
+      // manual carousel controls
+      $('.next').click(function () { $('.carousel').carousel('next'); return false; });
+      $('.prev').click(function () { $('.carousel').carousel('prev'); return false; });
+
+    })(jQuery);
+  </script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+  <script src="assets/js/smoothproducts.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+</body>
+
 </html>
