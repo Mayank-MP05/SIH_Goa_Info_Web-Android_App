@@ -15,10 +15,10 @@
   <link rel="stylesheet" href="./afterCSS/mapLoad.css" />
 </head>
 
-<body>
+<body onload="getMapList()">
   <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
     <div class="container">
-      <img src="./images/icon/icon-circle-png.png" width="30" height="30" alt="">
+      <img src="./images/icon/icon-circle-png.png" width="50" height="50" alt="">
       <a class="navbar-brand logo" href="#">Nemo - Guide</a>
     </div>
   </nav>
@@ -27,6 +27,11 @@
       <div class="container">
         <!---Map Div Load Here-->
         <div id="osm-map" style="height: 60vh;"></div>
+        <div class="card">
+          <ul class="list-group list-group-flush" id="Make-a-list">
+
+          </ul>
+        </div>
       </div>
     </section>
   </main>
@@ -68,6 +73,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
   <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
   <script src="./JSLoad/map-load.js"></script>
+  <script src="./JSLoad/10-entry.js"></script>
+  <script src="./JSLoad/map-modal.js"></script>
 
   <script src="assets/js/smoothproducts.min.js"></script>
   <script src="assets/js/theme.js"></script>

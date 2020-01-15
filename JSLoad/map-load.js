@@ -1,8 +1,7 @@
+
 // Where you want to render the map.
 var element = document.getElementById("osm-map");
 
-// Height has to be set. You can do this in CSS too.
-element.style = "";
 
 // Create Leaflet map on map element.
 var map = L.map(element);
@@ -10,7 +9,7 @@ var map = L.map(element);
 // Add OSM tile leayer to the Leaflet map.
 L.tileLayer("http://{s}.tile.osm.org/{z}/{x}/{y}.png", {
   attribution:
-    '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+    '&copy; PCCOE Team Infinity Seekers'
 }).addTo(map);
 
 // Target's GPS coordinates.
